@@ -6,3 +6,34 @@
 // если указанной страны нет в списке, то выводи в alert сообщение 'В вашей стране доставка не доступна'.
 // Ниже приведен список стран и стоимость доставки.
 // Китай - 150 кредитов Чили - 250 кредитов Австралия - 165 кредитов Индия - 90 кредитов Ямайка - 130 кредитов
+
+let order = prompt('place your order please')
+let china = 150
+let chili = 250 
+let australia = 165
+let india = 90 
+let jamaica = 130
+
+switch (order.toLocaleLowerCase()) {
+    case 'china' : 
+    console.log (`'Доставка в ${order} будет стоить ${china} кредитов'`)
+    break;
+
+    case 'chili' :
+        console.log(`'Доставка в ${order} будет стоить ${chili} кредитов'`)
+    break;
+
+    case 'india' : 
+        console.log(`'Доставка в ${order} будет стоить ${india} кредитов'`)
+        break;
+
+    case 'australia' : 
+        console.log(`'Доставка в ${order} будет стоить ${australia} кредитов'`)
+        break;
+
+    case 'jamaica' :
+        console.log(`'Доставка в ${order} будет стоить ${jamaica} кредитов'`)   
+        break; 
+
+        default : alert(`order to ${order} not available`); 
+}
