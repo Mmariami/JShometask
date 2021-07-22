@@ -16,8 +16,7 @@ let order = prompt('how much you want to buy?');
 totalPrice = order * pricePerDroid;
 if (order===null) {
    console.log('Отменено пользователем!')
-} 
-if (totalPrice > credits){
+} else if (totalPrice > credits){
     console.log('Недостаточно средств на счету!')
 } else {
     let left = credits - totalPrice;
