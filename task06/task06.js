@@ -9,3 +9,18 @@
 // число в prompt.
 // let input; 
 // let total = 0;
+let input = true;
+let total = 0
+while (input) {
+    input = prompt('please enter number'); // string
+    console.log(input);
+    let number = parseInt(input)
+    
+    if (!isNaN(number)) {
+        total = total + number;
+    } else {
+        if (input !== null) alert('please enter number')
+    }
+    
+} 
+
